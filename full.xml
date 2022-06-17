@@ -32,7 +32,9 @@
            groups="buildtools,chromeos-admin,firmware,labtools,minilayout,paygen" />
   <project path="docs"
            name="chromiumos/docs"
-           groups="crosvm" />
+           groups="crosvm">
+    <annotation name="branch-mode" value="pin" />
+  </project>
   <project path="infra/build/drydock"
            name="chromiumos/infra/build/drydock"
            groups="notdefault,infra-tools">
