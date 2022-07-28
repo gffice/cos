@@ -95,8 +95,8 @@
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="cab8a95f2961561eb56a95d6f2bfc685686db75a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver"/>
   <project name="chromiumos/manifest" path="manifest" revision="a7d35a605d13cdf3ee8e81632fbe2105714c0f35" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
-  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="4bb2829ee539fc63a6dec7ebf4e1dcf868432e04" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware"/>
-  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="a138ee4f1a4909ffd766dc56dbc519b5c6d0fe8a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools" sync-c="true"/>
+  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="f56293823728b2c3ada1ef1ebaebcf2d60778e3c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware"/>
+  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="802a2193f5b0c0491fd72165ee5a6e765a906a89" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools" sync-c="true"/>
   <project name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="a5ca903bc026c8acf42bb60b74dffbb36a26cb92" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools"/>
   <project name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="a09b4ba0bebbe558bbfa4b3f9711aa653968a56b" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="8a2276f22f0678bee89b8ac6c46d9dd597c6d549" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -119,7 +119,7 @@
   <project name="chromiumos/platform/dev-util" path="src/platform/dev" revision="69500373d02e6ed37e6514cf205b9e2f38e21807" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,buildtools,devserver"/>
   <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" revision="67636119fec10f69c516e4429c52a1b1c9dd45d8" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/ec" path="src/platform/cr50" revision="923f4a6d25591fc18668ff5442f0db687e5337bc" upstream="refs/heads/cr50_stab" dest-branch="refs/heads/cr50_stab" groups="paygen,firmware"/>
-  <project name="chromiumos/platform/ec" path="src/platform/ec" revision="a6119dbea094162c944836e9856e64a766c3959e" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="paygen,firmware"/>
+  <project name="chromiumos/platform/ec" path="src/platform/ec" revision="0d7167b31bcf1feb808f793ab4813bfe138970c9" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="paygen,firmware"/>
   <project name="chromiumos/platform/ec" path="src/platform/ish" revision="f4bb384c7161f6905ddf8a9a3154d58625d1f50a" upstream="refs/heads/ish" dest-branch="refs/heads/ish" groups="firmware"/>
   <project name="chromiumos/platform/ec" path="src/platform/release-firmware/fpmcu-bloonchipper" revision="e5fb0b9ba488614b5684e640530f00821ab7b943" upstream="refs/heads/firmware-fpmcu-bloonchipper-release" dest-branch="refs/heads/firmware-fpmcu-bloonchipper-release" groups="firmware">
     <annotation name="branch-mode" value="pin"/>
@@ -218,7 +218,7 @@
   <project name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" revision="9c71c8331ad52a11d29496ffb10cbdb1a51e2ccb" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="firmware"/>
   <project name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="4dd1b98bab42f3919c48bfb79510747e1b6499d5" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="paygen,firmware"/>
   <project name="chromiumos/third_party/fwupd" path="src/third_party/fwupd" revision="d7e7d261d42bcbf942edc255fba0db790f1108e4" upstream="refs/heads/fwupd-1.8.1" dest-branch="refs/heads/fwupd-1.8.1"/>
-  <project name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="6cae01f985b226143905512febebb399c9267e55" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="paygen,labtools"/>
+  <project name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="b5dc206c1466e939e152b69836f5fa37981eee43" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="paygen,labtools"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="c297db6ffd38d6694fe5f8b04b55aa74e00e9c77" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant-cros/current" revision="621410e2e3d8507237e27889136f98af3ae1ebb7" upstream="refs/heads/wpa_supplicant-2.9.1" dest-branch="refs/heads/wpa_supplicant-2.9.1"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant-cros/next" revision="621410e2e3d8507237e27889136f98af3ae1ebb7" upstream="refs/heads/wpa_supplicant-2.9.1" dest-branch="refs/heads/wpa_supplicant-2.9.1"/>
