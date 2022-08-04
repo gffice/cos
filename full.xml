@@ -176,6 +176,9 @@
   <project path="src/platform/minigbm"
            name="chromiumos/platform/minigbm"
            groups="crosvm" />
+  <project path="src/platform/minijail"
+           name="chromiumos/platform/minijail"
+           groups="crosvm" />
   <project path="src/platform/moblab"
            name="chromiumos/platform/moblab"
            groups="notdefault,moblab" />
@@ -727,6 +730,7 @@
            revision="refs/heads/master">
     <annotation name="branch-mode" value="pin" />
   </project>
+  <!-- TODO(b/240742087): Remove aosp minijail -->
   <project path="src/aosp/external/minijail"
            remote="aosp"
            name="platform/external/minijail"
