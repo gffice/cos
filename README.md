@@ -95,6 +95,11 @@ List of specific annotations we use:
         *   `drop`: drop the project from the manifest in the newly created
             branch.
         *   `create` (default): create a new branch for the project.
+    *   'bisection-branch'
+        Kernel continuous rebase (KCR) uses this annotation to provide the Bisector
+        with a branch name for performing bisection. The kernel continuous rebase
+        branches can't be directly used for bisection because there is no linear
+        history between two KCR rebases.
 *   `<remote>`
     *   `public`: `true`, `false` (default). Whether the remote is publicly
         accessible (i.e. external). Currently used by the Manifest Doctor to
