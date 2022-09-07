@@ -24,7 +24,9 @@ If you want to update the list of synced files, see the [cros_source recipe].
 The current list of files:
 
 * `codesearch-chromiumos.xml`
+* `DIR_METADATA`
 * `full.xml`
+* `README.md`
 * `_kernel_upstream.xml`
 * `_remotes.xml`
 
