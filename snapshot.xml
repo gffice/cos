@@ -21,7 +21,7 @@
   </project>
   <project name="aosp/platform/hardware/interfaces/neuralnetworks" path="src/aosp/hardware/interfaces/neuralnetworks" revision="181f7c798017c00372848000f4ba38b04936e5ab" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="aosp/platform/packages/modules/Bluetooth" path="src/aosp/packages/modules/Bluetooth/local" revision="7ce90b54f592e730d50ef70ba7a2537d745794ee" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault,bluetooth"/>
-  <project name="aosp/platform/packages/modules/Bluetooth" path="src/aosp/packages/modules/Bluetooth/upstream" revision="986e30c3ccbba94384aa792388823b4c9640c0f3" upstream="refs/heads/upstream/master" dest-branch="refs/heads/upstream/master" groups="notdefault,bluetooth">
+  <project name="aosp/platform/packages/modules/Bluetooth" path="src/aosp/packages/modules/Bluetooth/upstream" revision="2157c0cb9ebdda4cdff6628a535cdd96bde92f53" upstream="refs/heads/upstream/master" dest-branch="refs/heads/upstream/master" groups="notdefault,bluetooth">
     <annotation name="branch-mode" value="pin"/>
   </project>
   <project name="aosp/platform/system/core/base" path="src/aosp/system/core/base" revision="8cf6479cfd925657da51da04902a68dfe7e84632" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
@@ -39,6 +39,7 @@
     <annotation name="branch-mode" value="pin"/>
   </project>
   <project name="breakpad/breakpad" path="src/third_party/breakpad" revision="335e61656fa6034fabc3431a91e5800ba6fc3dc9"/>
+  <project name="chromium/llvm-project/cfe/tools/clang-format" path="src/chromium/src/buildtools/clang_format/script" remote="chromium" revision="bb994c6f067340c1135eb43eed84f4b33cfa7397" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,buildtools,labtools"/>
   <project name="chromium/src/buildtools" path="src/chromium/src/buildtools" remote="chromium" revision="b79692f320d80b158ce069f166f32861c36c6074" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,buildtools,labtools"/>
   <project name="chromium/src/components/policy" path="src/chromium/src/components/policy" remote="chromium" revision="26f347b3f4d3a94fb19f2469f466738c1120dff9" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromium/src/media/midi" path="src/chromium/src/media/midi" remote="chromium" revision="77cc36d72b2a07ce056c6dc57290b2e094db7931"/>
@@ -85,7 +86,7 @@
   <project name="chromiumos/infra/proto" path="infra/proto" revision="2947ea1a4ac9f1f50f2cac6d49cc86bbe6720ba8" upstream="refs/heads/main" dest-branch="refs/heads/main">
     <annotation name="branch-mode" value="tot"/>
   </project>
-  <project name="chromiumos/infra/recipes" path="infra/recipes" revision="1904d1db894fcf003b1d02a67c7ae61c5fd942ae" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="chromeos-admin">
+  <project name="chromiumos/infra/recipes" path="infra/recipes" revision="efccf09c8a0436367bca3ea2c30e85d273e7a890" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="chromeos-admin">
     <annotation name="branch-mode" value="drop"/>
   </project>
   <project name="chromiumos/infra/suite_scheduler" path="infra/suite_scheduler" revision="93187d1b20388c10a26c959d911119385a4a7ca5" upstream="refs/heads/main" dest-branch="refs/heads/main">
@@ -93,9 +94,9 @@
   </project>
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="39254f97db8d6ab8b3fdef3d2f7038ac42978b78" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="buildtools,chromeos-admin,labtools,sysmon,devserver"/>
-  <project name="chromiumos/manifest" path="manifest" revision="f7bfa6540b9cead6dc81c55f11c229357a3d5411" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
-  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="b6c99187985c60e4b3a2c255e787a9a6256000d7" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware"/>
-  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="54223e648de1f4e1aa6c1724044018ee89ae23a6" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools" sync-c="true"/>
+  <project name="chromiumos/manifest" path="manifest" revision="dcf444d8871ef310fce1a431388204bfa3a32b20" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
+  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="ec78e469d91bff31fed2744c7e5914c8eec6fadd" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware"/>
+  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="4c632df3d3f4a7f890af0e0347889f10ef25f341" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools" sync-c="true"/>
   <project name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="4e5d8624925dc3b45094c36cbe2799b3895db673" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools"/>
   <project name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="6fadf7c7660179614ec58585a5a43bb20128a923" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen,firmware,labtools"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="8a2276f22f0678bee89b8ac6c46d9dd597c6d549" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -160,8 +161,8 @@
   <project name="chromiumos/platform/pinweaver" path="src/platform/pinweaver" revision="268a62fc6e8253aa5e79a9500504ded4d59458ba" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/rules_cros" path="src/platform/rules_cros" revision="c193ad352d1838861dfd481a2aae0456a8f3d18e" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/satlab" path="src/platform/satlab" revision="bc0888cd6eb4213d7bfd5054e7a2f4704850597c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault,satlab"/>
-  <project name="chromiumos/platform/tast" path="src/platform/tast" revision="693ce014f5f23e6d798723223d596d7e7b3cf22f" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen"/>
-  <project name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="cc5789c9246cfc5661d436d242c1d1fdb109544a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen"/>
+  <project name="chromiumos/platform/tast" path="src/platform/tast" revision="f1aa62763fc279e6f8010c56ad31f6447fa87c83" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen"/>
+  <project name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="1ee352fa5c25d5fc458cb20c3ff1f8bde3e17947" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,paygen"/>
   <project name="chromiumos/platform/tauto" path="src/platform/tauto" revision="2c088e3efa0b85bf21457b4df3f3b68d682d7a15" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" revision="b8b2c09a7965e530eeeba1e7adac51ef542264ee" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
   <project name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" revision="cdb1ae2b6d3a294d10b45f3385e6a6285a8926c2" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -189,7 +190,7 @@
   <project name="chromiumos/third_party/aver-updater" path="src/third_party/aver-updater" revision="6418ac5d86c720d234f961513021a5ff0a2bf3d8" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="chromiumos/third_party/bluez" path="src/third_party/bluez/current" revision="4786b4e951d1f90d3a953d7e5bb4c3afb2a9a8d7" upstream="refs/heads/chromeos-5.54" dest-branch="refs/heads/chromeos-5.54"/>
   <project name="chromiumos/third_party/bluez" path="src/third_party/bluez/next" revision="4786b4e951d1f90d3a953d7e5bb4c3afb2a9a8d7" upstream="refs/heads/chromeos-5.54" dest-branch="refs/heads/chromeos-5.54"/>
-  <project name="chromiumos/third_party/bluez" path="src/third_party/bluez/upstream" revision="95d9dc6764fc3859af9528c222eef95e843a9cbc" upstream="refs/heads/upstream/master" dest-branch="refs/heads/upstream/master">
+  <project name="chromiumos/third_party/bluez" path="src/third_party/bluez/upstream" revision="6c712030567b76e4ea29adbd816c0e5cc994a45c" upstream="refs/heads/upstream/master" dest-branch="refs/heads/upstream/master">
     <annotation name="branch-mode" value="pin"/>
   </project>
   <project name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" revision="076cb8e624d2f9d8ab75fc07f614e3c1288e0b2e" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
@@ -260,7 +261,7 @@
   <project name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" revision="0f41a12e5731e8b44b5fc38d79e305e9affb62cd" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="chromiumos/third_party/logitech-updater" path="src/third_party/logitech-updater" revision="f9ff6e422304b68630d2cb0e1caab3dea646343e" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" revision="a1da785c038730d7d900415945688f6fb76175f4" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="02d858ef0dd958767dad0ab4a606f1f1af0ee155" upstream="refs/heads/upstream/main" dest-branch="refs/heads/upstream/main"/>
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="513d074d39847ae798c63aea6ea8870389b0ef7b" upstream="refs/heads/upstream/main" dest-branch="refs/heads/upstream/main"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-amd" revision="4575082f493fbd877513c160788b64111c73dfb6" upstream="refs/heads/chromeos-amd" dest-branch="refs/heads/chromeos-amd"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-arcvm" revision="ee706cc9a8b65734d4c30315544b8677d4f1b1d2" upstream="refs/heads/chromeos-arcvm" dest-branch="refs/heads/chromeos-arcvm"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-debian" revision="c36b89b82bcd270e1f9ee7d0824c9e265a39e95b" upstream="refs/heads/debian" dest-branch="refs/heads/debian"/>
@@ -307,9 +308,8 @@
   <project name="chromiumos/third_party/zephyr/hal_stm32" path="src/third_party/zephyr/hal_stm32" revision="6fac5340bc4687b634ca7808d33522d6e77ea87b" upstream="refs/heads/chromeos-main" dest-branch="refs/heads/chromeos-main" groups="firmware,zephyr"/>
   <project name="chromiumos/third_party/zephyr/nanopb" path="src/third_party/zephyr/nanopb" revision="0cdcea9140d23ce6f739850f93dcf3a2f4f6e4d4" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware,zephyr"/>
   <project name="external/git.kernel.org/fs/xfs/xfstests-dev" path="src/third_party/xfstests" revision="bf1ef26900eec3b028c1b0f55f65b3b233e47c56" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
-  <project name="external/github.com/llvm/llvm-project" path="src/third_party/llvm-project" revision="a3becb333d7faae695e18728e9b8fa3a3579a240" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault"/>
-  <project name="external/github.com/llvm/llvm-project/clang/tools/clang-format" path="src/chromium/src/buildtools/clang_format/script" remote="chromium" revision="8b525d2747f2584fc35d8c7e612e66f377858df7" groups="minilayout,paygen,buildtools,labtools"/>
-  <project name="external/pigweed/pigweed/pigweed" path="src/third_party/pigweed" revision="9ef91a13a3578ba92d1d3dbb52db278797766f09" upstream="refs/heads/upstream/main" dest-branch="refs/heads/upstream/main"/>
+  <project name="external/github.com/llvm/llvm-project" path="src/third_party/llvm-project" revision="dd41453f1b5ee2b393f701c9f7b0619ec1dd8744" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault"/>
+  <project name="external/pigweed/pigweed/pigweed" path="src/third_party/pigweed" revision="797535caa6ff13b8cdeaed7a35191568bc53d646" upstream="refs/heads/upstream/main" dest-branch="refs/heads/upstream/main"/>
   <project name="infra/luci/client-py" path="chromite/third_party/swarming.client" remote="chromium" revision="34b20305c7a69eb89e1abd5e2a94708db999f0a9" groups="buildtools,chromeos-admin,firmware,labtools,minilayout,paygen"/>
   <project name="linux-syscall-support" path="src/third_party/breakpad/src/third_party/lss" revision="e1e7b0ad8ee99a875b272c8e33e308472e897660"/>
   <project name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="60e2a9b62a69784088406b31d711c3c74e79a866" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="paygen"/>
@@ -319,7 +319,7 @@
   <project name="platform/external/perfetto" path="src/aosp/external/perfetto" remote="aosp" revision="721e84a4a383321614e259346986120f1ec80df5" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="paygen,notdefault"/>
   <project name="platform/external/puffin" path="src/aosp/external/puffin" remote="aosp" revision="9932c5ede55e8a273ea21c5505a5d7ee141125e6" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="paygen"/>
   <project name="platform/system/keymaster" path="src/aosp/system/keymaster" remote="aosp" revision="49dfc58d6c4c66f5d0b0d06f0161da4e602a1293" upstream="refs/heads/pie-release" dest-branch="refs/heads/pie-release"/>
-  <project name="website" revision="88bf107745c94d2dd63100ce052191e7cf74a9d2" upstream="refs/heads/main" dest-branch="refs/heads/main">
+  <project name="website" revision="7ca55f677358a7d26979700bc81fdd9e4f9f272d" upstream="refs/heads/main" dest-branch="refs/heads/main">
     <annotation name="branch-mode" value="drop"/>
   </project>
   
