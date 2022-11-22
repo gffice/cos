@@ -14,6 +14,12 @@ Your sources have been sync'd successfully.
     <copyfile dest="AUTHORS" src="AUTHORS" />
     <copyfile dest="LICENSE" src="LICENSE" />
   </project>
+  <project path="infra/chromite-HEAD"
+           name="chromiumos/chromite"
+           revision="refs/heads/main"
+           groups="buildtools">
+    <annotation name="branch-mode" value="tot" />
+  </project>
   <project name="chromiumos/infra/bad_cl_detector" path="infra/bad_cl_detector" />
   <project name="chromiumos/infra/dummies/general-sandbox" path="infra/dummies/general-sandbox" />
   <project name="chromiumos/infra/dummies/merge-sandbox" path="infra/dummies/merge-sandbox" />
@@ -21,7 +27,6 @@ Your sources have been sync'd successfully.
   <project name="chromiumos/infra/cl_exonerator" path="infra/cl_exonerator" />
   <project name="chromiumos/infra/cl_status_viewer" path="infra/cl_status_viewer" />
   <project name="chromiumos/infra/distfiles_updater" path="infra/distfiles_updater" />
-  <project name="chromiumos/infra/logstock" path="infra/logstock" />
   <project name="chromiumos/infra/lucifer" path="infra/lucifer" />
   <project groups="chromeos-admin,labtools" name="chromiumos/infra/skylab_inventory" path="infra/skylab_inventory" />
   <project name="chromiumos/infra/suite_scheduler" path="infra/suite_scheduler" />
