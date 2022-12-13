@@ -15,7 +15,7 @@
               enabled-list="pre-upload" />
   <project path="chromite"
            name="chromiumos/chromite"
-           groups="minilayout,paygen,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm,fwsdk">
+           groups="minilayout,paygen,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm">
     <copyfile src="AUTHORS" dest="AUTHORS" />
     <copyfile src="LICENSE" dest="LICENSE" />
   </project>
@@ -102,7 +102,7 @@
   <project path="src/platform/cr50"
            name="chromiumos/platform/ec"
            revision="refs/heads/cr50_stab"
-           groups="paygen,firmware,fwsdk" />
+           groups="paygen,firmware" />
   <project path="src/platform/crdyboot"
            name="chromiumos/platform/crdyboot" />
   <project path="src/platform/croscomp"
@@ -116,7 +116,7 @@
            groups="crosvm" />
   <project path="src/platform/depthcharge"
            name="chromiumos/platform/depthcharge"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/platform/dev"
            name="chromiumos/platform/dev-util"
            groups="minilayout,paygen,firmware,buildtools,devserver" />
@@ -133,7 +133,7 @@
            name="chromiumos/platform/factory_installer" />
   <project path="src/platform/firmware"
            name="chromiumos/platform/firmware"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/platform/frecon"
            name="chromiumos/platform/frecon" />
   <project path="src/platform/gestures"
@@ -218,9 +218,6 @@
   </project>
   <project path="src/platform/rules_cros"
            name="chromiumos/platform/rules_cros" />
-  <project path="src/platform/rules_cros_firmware"
-           name="chromiumos/platform/rules_cros_firmware"
-           groups="fwsdk" />
   <project path="src/platform/satlab"
            name="chromiumos/platform/satlab"
            groups="notdefault,satlab" />
@@ -250,7 +247,7 @@
            name="chromiumos/platform/usi-test" />
   <project path="src/platform/vboot_reference"
            name="chromiumos/platform/vboot_reference"
-           groups="paygen,firmware,buildtools,fwsdk" />
+           groups="paygen,firmware,buildtools" />
   <project path="src/platform/vkbench"
            name="chromiumos/platform/vkbench" />
   <project path="src/platform/vpd"
@@ -336,35 +333,35 @@
   <project path="src/third_party/coreboot"
            name="chromiumos/third_party/coreboot"
            revision="refs/heads/chromeos-2016.05"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/coreboot/3rdparty/amd_blobs"
            name="chromiumos/third_party/coreboot/amd_blobs"
            revision="refs/heads/chromeos"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/coreboot/3rdparty/blobs"
            name="chromiumos/third_party/coreboot/blobs"
            revision="refs/heads/master"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/coreboot/3rdparty/intel-microcode"
            name="chromiumos/third_party/coreboot/intel-microcode"
            revision="refs/heads/master"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/coreboot/3rdparty/libgfxinit"
            name="chromiumos/third_party/coreboot/libgfxinit"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/coreboot/3rdparty/libhwbase"
            name="chromiumos/third_party/coreboot/libhwbase"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/coreboot/3rdparty/qc_blobs"
            name="chromiumos/third_party/coreboot/qc_blobs"
            revision="refs/heads/upstream/master"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/cros-adapta"
            name="chromiumos/third_party/cros-adapta"
            revision="refs/heads/master" />
   <project path="src/third_party/cryptoc"
            name="chromiumos/third_party/cryptoc"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/cups"
            name="chromiumos/third_party/cups"
            revision="refs/heads/chromeos" />
@@ -376,7 +373,7 @@
   <project path="src/third_party/edk2"
            name="chromiumos/third_party/edk2"
            revision="refs/heads/chromeos-2017.08"
-           groups="firmware,fwsdk" />
+           groups="firmware" />
   <project path="src/third_party/em100"
            name="chromiumos/third_party/em100"
            revision="refs/heads/master"
@@ -645,14 +642,13 @@
            groups="firmware" />
   <project path="src/third_party/tpm2"
            name="chromiumos/third_party/tpm2"
-           groups="firmware,crosvm,fwsdk" />
+           groups="firmware,crosvm" />
   <project path="src/third_party/trousers"
            name="chromiumos/third_party/trousers"
            revision="refs/heads/chromeos-0.3.13" />
   <project path="src/third_party/u-boot/files"
            name="chromiumos/third_party/u-boot"
-           revision="refs/heads/chromeos-v2022.01"
-           groups="fwsdk" />
+           revision="refs/heads/chromeos-v2022.01" />
   <project path="src/third_party/upstart"
            name="chromiumos/third_party/upstart"
            revision="refs/heads/chromeos-1.13" />
@@ -683,17 +679,17 @@
   <project path="src/third_party/zephyr/cmsis"
            name="chromiumos/third_party/zephyr/cmsis"
            revision="refs/heads/chromeos-main"
-           groups="firmware,zephyr,fwsdk" />
+           groups="firmware,zephyr" />
   <project path="src/third_party/zephyr/hal_stm32"
            name="chromiumos/third_party/zephyr/hal_stm32"
            revision="refs/heads/chromeos-main"
-           groups="firmware,zephyr,fwsdk" />
+           groups="firmware,zephyr" />
   <project path="src/third_party/zephyr/main"
            name="chromiumos/third_party/zephyr"
-           groups="firmware,zephyr,fwsdk" />
+           groups="firmware,zephyr" />
   <project path="src/third_party/zephyr/nanopb"
            name="chromiumos/third_party/zephyr/nanopb"
-           groups="firmware,zephyr,fwsdk" />
+           groups="firmware,zephyr" />
 
   <!-- Chromium repositories.
        We try to check out repos under src/chromium/ using the same layout as a
